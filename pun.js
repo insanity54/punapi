@@ -1,7 +1,7 @@
 let littlePuns = require('./puns/little-pun-book-the.json');
-let dadPuns = require('./puns/dad.json');
+// let dadPuns = require('./puns/dad.json');
 // let testPuns = require('./puns/test.json');
-let puns = littlePuns.concat(dadPuns);
+let puns = littlePuns;
 let md = require('markdown-it')();
 
 
