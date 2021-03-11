@@ -18,7 +18,7 @@ nunjucks.configure('views', {
 app.get('/', async (req, res, next) => {
 	let pun = randomPun();
 	let data = {
-		message: pun,
+		pun: pun,
 		layout:  'layout.njk',
 		title: 'Random Pun Generator'
 	}
