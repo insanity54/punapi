@@ -23,6 +23,14 @@ app.get('/', async (req, res, next) => {
 		title: 'Random Pun Generator'
 	}
 	res.render('index.njk', data);
+});
+
+app.get('/about', async (req, res, next) => {
+	let data = {
+		layout: 'layout.njk',
+		title: 'Random Pun Generator'
+	};
+	res.render('about.njk', data);
 })
 
 app.listen(port, () => {

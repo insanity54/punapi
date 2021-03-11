@@ -8,12 +8,14 @@
   <body>
 	  <nav>
 	  	<ul>
-	  		<li>{{ title }}</li>
+	  		<li><a href="/">{{ title }}</a></li>
+        <li><a href="/about">About</a></li>
 	  	</ul>
 	  </nav>
   	<main>
     	{% block content %}
     	{% endblock %}
     </main>
+    <script async src="https://analytics.lot.sbtp.xyz/tracker.js" data-ackee-server="https://analytics.lot.sbtp.xyz" data-ackee-domain-id="2404d5ce-080c-4566-9976-c1c8f3b6942e"></script>
   </body>
 </html>
