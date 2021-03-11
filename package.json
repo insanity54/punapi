@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "@grimtech/envimport": "^0.0.1",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mvp.css": "^1.6.3",
+    "nunjucks": "^3.2.3"
+  },
+  "name": "punapi",
+  "description": "Returns a random pun",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {
+    "light-server": "^2.9.1",
+    "supervisor": "^0.12.0"
+  },
+  "scripts": {
+    "dev": "DEBUG=\"punapi\" supervisor -w . -e 'js,njk,json,md' \"index.js\"",
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insanity54/punapi.git"
+  },
+  "author": "Chris Grimmett <chris@grimtech.net>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/insanity54/punapi/issues"
+  },
+  "homepage": "https://github.com/insanity54/punapi#readme"
+}
