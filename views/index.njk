@@ -1,4 +1,5 @@
 {% extends layout %}
 {% block content %}
-  <p class="pun">{{pun}}</p>
+  <div class="pun">{{ pun | safe }}</div>
+  <a class="reload" href="/">🎲 Get a new pun</a>
 {% endblock %}
