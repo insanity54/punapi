@@ -1,10 +1,24 @@
+<!doctype html>
+<html  lang="en">
+  <head>
+    <title>{{ title }}</title>
+    
+  <style>
+  body { 
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+    color: white;
+    font-size: 24pt;
+    }
+  </style>
 
-<style>
-body { 
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0px auto;
-  overflow: hidden;
-  color: white;
-  font-size: 24pt;
-  }
-</style>
+  </head>
+  <body>
+  	<main>
+    	{% block content %}
+    	{% endblock %}
+    </main>
+  </body>
+</html>
+
