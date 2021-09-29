@@ -43,6 +43,16 @@ app.get('/about', async (req, res, next) => {
 	res.render('about.njk', data);
 });
 
+app.get('/obs', async (req, res, next) => {
+	let { pun, source } = randomPun();
+	let data = {
+		pun: pun.html,
+		layout: 'slimLayout.njk',
+		title: 'Random Pun Generator'
+	};
+	res.render('obs.njk', data);
+})
+
 app.listen(port, () => {
 	console.log(`listening on port ${port}`);
 });
